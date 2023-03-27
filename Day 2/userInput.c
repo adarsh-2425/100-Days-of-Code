@@ -13,7 +13,7 @@ int main(){
     printf("\n\nEntered  Integers are : %d and %d\n\n", num1, num2);
 
     // Taking Fraction as Input from User
-    printf("Enter fraction : \n");
+    printf("Enter fraction : \n\n");
     scanf("%f", &fraction);
     printf("\n\nEntered fraction is : %f\n\n", fraction);
 
