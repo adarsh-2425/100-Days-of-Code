@@ -5,9 +5,12 @@
 int main()
 {
     int a,b,c,d,e;
+    
+    //associvity from keft to right
     a = b = c = d = e = 5;
     
-    printf("%d", b);
+    printf("%d", a);
+    //output will be 5
     
 
     return 0;
