@@ -50,3 +50,16 @@ int main()
 
     return 0;
 }
+
+//Left shift
+
+#include <stdio.h>
+
+int main()
+{
+    int a = 10;
+    int c = a << 2;
+    printf("%d", c);
+
+    return 0;
+}
