@@ -77,3 +77,15 @@ int main()
     return 0;
 }
 
+//Comma operator
+
+#include <stdio.h>
+
+int main()
+{
+    int c = (printf("jenny"),4);
+    printf("%d", c);
+
+    return 0;
+}
+
