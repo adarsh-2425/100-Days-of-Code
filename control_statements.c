@@ -1,4 +1,4 @@
-//If operator
+//If-else operator
 
 #include <stdio.h>
 
