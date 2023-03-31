@@ -63,3 +63,17 @@ int main()
 
     return 0;
 }
+
+//Bitwise Not
+
+#include <stdio.h>
+
+int main()
+{
+    int a = 5;
+    int c = ~a;
+    printf("%d", c);
+
+    return 0;
+}
+
