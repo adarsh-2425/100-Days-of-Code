@@ -148,3 +148,27 @@ int main()
     
     return 0;
 }
+
+// While statement
+
+#include <stdio.h>
+
+int main()
+{
+    int num, i, sum = 0;
+    
+    for(i = 1; i <=3; i++){
+        printf("Enter Positive Number : ");
+        scanf("%d", &num);
+        
+        if(num < 0){
+            continue; //go back to loop
+        }
+            sum = sum + i;
+
+    }
+    printf("%d \n", sum);
+
+    return 0;
+}
+
