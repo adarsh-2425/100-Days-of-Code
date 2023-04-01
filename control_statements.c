@@ -18,3 +18,52 @@ int main()
 
     return 0;
 }
+
+//vowel or consonant using switch
+
+#include <stdio.h>
+
+int main()
+{
+    char ch;
+    
+    printf("Enter character : ");
+    scanf("%c", &ch);
+    
+    switch(ch){
+        case 'a':
+        case 'e':
+        case 'i':
+        case 'o':
+        case 'u':
+        printf("%c is a vowel", ch);
+        break;
+        
+        default:
+            printf("Not a vowel");
+    }
+
+
+    return 0;
+}
+
+//vowel or consonant using if else
+
+#include <stdio.h>
+
+int main()
+{
+    char ch;
+    
+    printf("Enter character : ");
+    scanf("%c", &ch);
+    
+    if ( ch == 'a' || ch == 'e' || ch == 'a' || ch == 'a' || ch == 'a'){
+        printf("%c is a vowel", ch);
+    }
+    else{
+        printf("Not a vowel");
+    }
+
+    return 0;
+}
