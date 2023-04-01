@@ -67,3 +67,36 @@ int main()
 
     return 0;
 }
+
+
+//Check Character is Lowercase or Uppercase or Special Character using switch case.
+
+
+#include <stdio.h>
+
+int main()
+{
+    char ch;
+    printf("Enter character : ");
+    scanf("%c", &ch);
+    
+    switch(ch){
+        
+        case 'A'...'Z':
+            printf("%c is Uppercase", ch);
+            break;
+            
+        case 'a'...'z':
+            printf("%c is Lowercase", ch);
+            break;
+            
+        case '0'...'9':
+            printf("%c is a Number", ch);
+            break;
+        
+        default:
+            printf("Special Character");
+    }
+    
+    return 0;
+}
