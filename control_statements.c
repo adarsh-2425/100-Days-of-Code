@@ -100,3 +100,51 @@ int main()
     
     return 0;
 }
+
+
+//Calculator using switch case.
+
+
+#include <stdio.h>
+
+int main()
+{
+    int num1, num2, result;
+    char op;
+    
+    printf("Enter operator ( +, - , * , / ) : ");
+    scanf("%c", &op);
+    
+    printf("Enter Operands  : ");
+    scanf("%d %d", &num1, &num2);
+    
+    
+    //switch statement starts
+    switch(op){
+        
+        case '+':
+            result = num1 + num2;
+            printf("%d + %d = %d", num1, num2, result);
+            break;
+            
+        case '-':
+            result = num1 - num2;
+            printf("%d - %d = %d", num1, num2, result);
+            break;
+            
+        case '*':
+            result = num1 * num2;
+            printf("%d * %d = %d", num1, num2, result);
+            break;
+            
+        case '/':
+            result = num1 / num2;
+            printf("%d / %d = %d", num1, num2, result);
+            break;
+        
+        default:
+            printf("Invalid Operation");
+    }
+    
+    return 0;
+}
