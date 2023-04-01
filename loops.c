@@ -1,5 +1,5 @@
 
-//For looop
+//For looop to print number upto 25
 
 
 #include <stdio.h>
@@ -12,5 +12,24 @@ int main()
     }
         
     
+    return 0;
+}
+
+//program to print table of a number using for loop
+
+#include <stdio.h>
+
+int main()
+{
+    int num, result, i;
+    
+    printf("Enter Number : ");
+    scanf("%d", &num);
+    
+    for(i = 1; i <=12; i++){
+         result = num * i;
+         printf("%d * %d = %d \n", i, num, result);
+    }
+      
     return 0;
 }
