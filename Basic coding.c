@@ -27,3 +27,24 @@ int main()
 
 }
 
+//Program to print the Largest and Smallest using Global Declaration
+
+#include <stdio.h>
+
+void main(){
+    
+    int a, b;
+    
+    printf("Enter Two Numbers : ");
+    scanf("%d %d", &a, &b);
+    
+    if (a == b){
+        printf("%d and %d are same", a, b);
+    }
+    else if(a > b){
+        printf("%d is larger than %d", a, b);
+    }
+    else{
+        printf("%d is larger than %d", b, a);
+    }
+}
