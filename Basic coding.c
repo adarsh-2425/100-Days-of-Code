@@ -48,3 +48,24 @@ void main(){
         printf("%d is larger than %d", b, a);
     }
 }
+
+//Program to find factorial of a number
+
+#include <stdio.h>
+
+void main(){
+    
+    int i, n;
+    long int fact =1;
+    
+    printf("Program to find factorial of a number\n");
+    
+    printf("Enter Number : ");
+    scanf("%d", &n);
+    
+    for( i = 1; i <= n; i++){
+        fact *= i; //same as fact = fact * i
+    }
+    
+    printf("Factorial of %d is %ld", n, fact);
+}
