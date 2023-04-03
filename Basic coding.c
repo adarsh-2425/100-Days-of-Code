@@ -99,3 +99,30 @@ int main()
         printf("Not Palindrome");
     }
 }
+
+// Program to check whether a Number is a Palindrome using for loop
+
+#include <stdio.h>
+
+int main()
+{
+    int i, num, rem, rev = 0;
+    
+    printf("Enter Number : ");
+    scanf("%d", &num);
+    
+    for(i = num; i > 0; i = i / 10 )
+    {
+        rem = i % 10;
+        rev = (rev * 10) + rem;
+    }
+    
+    if (num ==  rev)
+    {
+        printf("Number is palindrome");
+    }
+    else
+    {
+        printf("Not Palindrome");
+    }
+}
