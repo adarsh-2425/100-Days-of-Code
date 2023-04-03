@@ -34,7 +34,7 @@ int xor(int a, int b){
     printf("After Swapping a = %d and b = %d", a, b);
 }
 
-//using multiplication and division
+//using multiplication and division. If one of the values is zero, operation will fail.
 int mulanddiv(int a, int b){
     
     a = a * b;
