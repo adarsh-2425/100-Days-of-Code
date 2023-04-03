@@ -101,3 +101,63 @@ int main()
     return 0;
 }
 
+// Read two arrays of size 5 and store the sum of these arrrays into third array
+
+#include <stdio.h>
+#define N 5 //defining size of array as 5
+
+int main()
+{
+    //initialization
+    
+    int arr1[N], arr2[N], sumArr[N];
+    int i;
+    
+    
+    // Getting first array
+    
+    printf("\nEnter Array 1 elements : ");
+    for(i = 0; i < N; i++)
+    {
+        scanf("%d ", &arr1[i]);
+    }
+    
+    // Getting second array
+    
+    printf("\nEnter Array 2 elements : ");
+    for(i = 0; i < N; i++)
+    {
+        scanf("%d ", &arr2[i]);
+    }
+    
+    
+    //calculating sum of two arrays and storing on 3rd array
+    
+    for(i = 0; i < N; i++)
+    {
+     sumArr[i] = arr1[i] + arr2[i];
+    }
+    
+    //printing array 1
+    
+    printf("\nArray 1 elements : ");
+    for(i = 0; i < N; i++){
+        printf("%d ", arr1[i]);
+    }
+    
+    //printing array 2
+    
+    printf("\nArray 2 elements : ");
+    for(i = 0; i < N; i++){
+        printf("%d ", arr2[i]);
+    }
+    
+    //printing array 3
+
+    printf("\nSum of elements : ");
+    for(i = 0; i < N; i++){
+        printf("%d ", sumArr[i]);
+    }
+
+    return 0;
+}
