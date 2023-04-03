@@ -126,3 +126,27 @@ int main()
         printf("Not Palindrome");
     }
 }
+
+// Program to find Sum of Digits of a Number
+
+#include <stdio.h>
+
+int main()
+{
+    int i, num, rem, sum = 0;
+    
+    printf("Enter Number : ");
+    scanf("%d", &num);
+    
+    i = num;
+    
+    while(i != 0)
+    {
+        rem = i % 10;
+        sum += rem;
+        i = i / 10;
+    }
+    
+    printf("Sum of %d is %d", num, sum);
+    
+}
