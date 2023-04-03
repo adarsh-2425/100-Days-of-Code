@@ -58,3 +58,46 @@ int main()
 
     return 0;
 }
+
+// Read array of 10 integers and count total no. of even and odd elements
+
+#include <stdio.h>
+#define N 10 //defining size of array as 1
+
+int main()
+{
+    //initialization
+    int a[N], i;
+    int even = 0, odd = 0;
+    
+    
+    // Getting integers
+    printf("\nEnter 10 integers : ");
+    for(i = 0; i < N; i++)
+    {
+        scanf("%d", &a[i]);
+    }
+    
+    
+    //calculating sum
+    for(i = 0; i < N; i++)
+    {
+        if (a[i] % 2 == 0)
+        {
+            even++;
+        }
+        else
+        {
+            odd++;
+        }
+        
+    }
+    
+    //printing
+    
+    printf("Total no of odd numbers : %d\n", odd);
+    printf("Total no of even numbers : %d\n", even);
+
+    return 0;
+}
+
