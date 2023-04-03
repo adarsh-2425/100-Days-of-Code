@@ -69,3 +69,33 @@ void main(){
     
     printf("Factorial of %d is %ld", n, fact);
 }
+
+// Program to check whether a Number is a Palindrome using while loop
+
+#include <stdio.h>
+
+int main()
+{
+    int i, num, rem, rev = 0;
+    
+    printf("Enter Number : ");
+    scanf("%d", &num);
+    
+    i = num;
+    
+    while(i > 0)
+    {
+        rem = i % 10;
+        rev = (rev * 10) + rem;
+        i = i / 10;
+    }
+    
+    if (num ==  rev)
+    {
+        printf("Number is palindrome");
+    }
+    else
+    {
+        printf("Not Palindrome");
+    }
+}
