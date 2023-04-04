@@ -150,3 +150,37 @@ int main()
     printf("Sum of %d is %d", num, sum);
     
 }
+
+//Program to reverse a String
+
+#include <stdio.h>
+
+int main()
+{
+    char str[20], rev[50];
+    int i, j, count = 0;
+    
+    printf("Enter a string  : ");
+    scanf("%s", str);
+    
+    printf("Before reverse : %s", str);
+    
+    //calculating length of string
+    
+    while(str[count] != '\0')
+    {
+        count++;
+    }
+    
+    j = count -1;
+    
+    //reversing
+
+    for(i=0; i<count; i++)
+    {
+        rev[i] = str[j];
+        j--;
+    }
+    
+    printf("\nAfter reverse : %s", rev);
+}
