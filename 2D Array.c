@@ -77,3 +77,32 @@ int main()
  
     return 0;
 }
+
+//Program to print sum of individual rows and columns
+
+#include <stdio.h>
+
+int main()
+{
+    int row = 3, col = 3, i, j, rowsum, colsum;
+    int matrix[row][col];
+    
+    //Getting Matrix
+    printf("Enter Matrix\n");
+    for(i = 0; i < row; i++)
+    for(j = 0; j < col; j++){
+        scanf("%d", &matrix[i][j]);
+    }
+    
+    //calculating sum of both row and col
+    for(i = 0; i < row; i++){
+        rowsum = colsum = 0;
+        for(j = 0; j < col; j++){
+            rowsum += matrix[i][j];
+            colsum += matrix[j][i];
+        }
+        printf("Row %d Sum is %d and Col %d Sum is %d\n", i, rowsum, i, colsum);
+    }
+    
+    return 0;
+}
