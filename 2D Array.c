@@ -19,15 +19,15 @@ int main()
     for(i = 0; i < row; i++){
         for(j = 0; j < col; j++){
             
-            printf("%d \n", mat1[i][j]);
+            printf("%d\t", mat1[i][j]); // ""\t" for tab space
             
             sum = sum + mat1[i][j];
         }
+        
+        printf("\n");
     }
     
-    printf("Sum of matrix is : %d", sum);
+    printf("\nSum of matrix is : %d", sum);
  
-    
-
     return 0;
 }
