@@ -166,3 +166,95 @@ int main()
     
     return 0;
 }
+
+//Program to Multiply two matrices
+
+#include <stdio.h>
+
+int main()
+{
+    int row1, col1, row2, col2; //row 1 and col1 are for storing row and column value of matrix 1
+    int sum, i, j, k;
+    
+    
+    //Getting Row and Column of First Matrix
+    printf("Enter Row and Column of First Matrix : ");
+    scanf("%d%d", &row1, &col1);
+    
+    //Getting Row and Column of Second Matrix
+    printf("Enter Row and Column of Second Matrix : ");
+    scanf("%d%d", &row2, &col2);
+    
+    //checking if column of first matrix is equal to row of second Matrix
+    //matrix multiplication can only be done if this condition is satisfied
+    
+    if(col1 != row2){
+        printf("\nMultiplication is not possible!");
+        printf("\nColumn of First Matrix Should be equal to row of second matrix");
+        return 0;
+    }
+    
+    else
+    
+    {
+    
+    int matrix1[row1][col1], matrix2[row2][col2], result[row1][col2];
+    
+    //Getting Matrix 1
+    printf("Enter First Matrix\n");
+    for(i = 0; i < row1; i++)
+    for(j = 0; j < col1; j++){
+        scanf("%d", &matrix1[i][j]);
+    }
+    
+    //Getting Matrix 2
+    printf("Enter Second Matrix\n");
+    for(i = 0; i < row2; i++)
+    for(j = 0; j < col2; j++){
+        scanf("%d", &matrix2[i][j]);
+    }
+    
+    //Multiplying
+    for(i = 0; i < row1; i++){
+        for(j = 0; j < col2; j++){
+            sum = 0;
+           for(k = 0; k < row2; k++)
+           {
+               sum += matrix1[i][k] * matrix2[k][j];
+               result[i][j] = sum;
+           }
+        }
+    }
+    
+    //printing first matrix
+    printf("\nFirst Matrix\n");
+    for(i = 0; i < row1; i++){
+      for(j = 0; j < col1; j++){
+        printf("%d\t", matrix1[i][j]);
+        } 
+        printf("\n");
+    }
+    
+     //printing Second matrix
+    printf("\nSecond Matrix\n");
+    for(i = 0; i < row2; i++){
+      for(j = 0; j < col2; j++){
+        printf("%d\t", matrix2[i][j]);
+        } 
+        printf("\n");
+    }
+    
+    //printing Result
+    printf("\nMultiplication Result of Two Matrix\n");
+    for(i = 0; i < row2; i++){
+      for(j = 0; j < col1; j++){
+        printf("%d\t", result[i][j]);
+        } 
+        printf("\n");
+    }
+    
+    }
+    
+    return 0;
+}
+
