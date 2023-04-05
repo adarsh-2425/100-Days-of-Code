@@ -106,3 +106,63 @@ int main()
     
     return 0;
 }
+
+//Program to Add Two Matrice and Store it in Third Matrix
+
+#include <stdio.h>
+
+int main()
+{
+    int row = 3, col = 3, i, j, rowsum, colsum;
+    int matrix1[row][col], matrix2[row][col], sumMatrix[row][col];
+    
+    //Getting Matrix 1
+    printf("Enter First Matrix\n");
+    for(i = 0; i < row; i++)
+    for(j = 0; j < col; j++){
+        scanf("%d", &matrix1[i][j]);
+    }
+    
+    //Getting Matrix 2
+    printf("Enter Second Matrix\n");
+    for(i = 0; i < row; i++)
+    for(j = 0; j < col; j++){
+        scanf("%d", &matrix2[i][j]);
+    }
+    
+    //calculating sum 
+    for(i = 0; i < row; i++){
+        for(j = 0; j < col; j++){
+            sumMatrix[i][j] = matrix1[i][j] + matrix2[i][j];
+        }
+    }
+    
+    //printing first matrix
+    printf("First Matrix\n");
+    for(i = 0; i < row; i++){
+      for(j = 0; j < col; j++){
+        printf("%d\t", matrix1[i][j]);
+        } 
+        printf("\n");
+    }
+    
+    //printing Second matrix
+    printf("Second Matrix\n");
+    for(i = 0; i < row; i++){
+      for(j = 0; j < col; j++){
+        printf("%d\t", matrix2[i][j]);
+        } 
+        printf("\n");
+    }
+    
+    //printing Sum
+    printf("Sum of Two Matrix\n");
+    for(i = 0; i < row; i++){
+      for(j = 0; j < col; j++){
+        printf("%d\t", sumMatrix[i][j]);
+        } 
+        printf("\n");
+    }
+    
+    return 0;
+}
