@@ -71,3 +71,28 @@ int main()
 
     return 0;
 }
+
+//Program to find Sum of N input Numbers in C
+
+#include <stdio.h>
+
+int main()
+{
+    int n, i, x, sum = 0;
+    
+    printf("Program to find Sum of N input Numbers in C\n");
+    
+    printf("\nEnter the number of integers you want to add : ");
+    scanf("%d", &n);
+    
+    printf("Enter %d integers : \n", n);
+    for(i = 0; i < n; i++){
+        scanf("\n%d", &x);
+        
+        sum += x;
+    }
+    
+    printf("\nSum of these %d integers are %d", n, sum);
+    
+    return 0;
+}
