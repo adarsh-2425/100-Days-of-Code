@@ -267,3 +267,24 @@ int main()
 
     return 0;
 }
+
+//Program to print the Multiplication Table of any Number
+
+#include <stdio.h>
+
+int main()
+{
+    int n, i;
+    
+    printf("Enter Number : ");
+    scanf("%d", &n);
+    
+    printf("Multiplication Table of %d upto 12\n", n);
+    
+    for(i = 1; i < 13; i++)
+    {
+        printf("\n\t%d * %d = %d", i, n, (i * n));
+    }
+
+    return 0;
+}
