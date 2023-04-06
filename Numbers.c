@@ -96,3 +96,42 @@ int main()
     
     return 0;
 }
+
+//Program to find first N Prime Numbers
+
+#include <stdio.h>
+
+int main()
+{
+    int n, i  = 3, count, c;
+    
+    printf("Program to find first N Prime Numbers\n");
+    
+    printf("\nEnter the limit : ");
+    scanf("%d", &n);
+    
+    printf("First %d prime numbers are \n",  n);
+    printf("\t2 "); //2 is the only even prime number
+    
+    for(count = 2; count <= n; i++)
+    {
+        for(c = 2; c < i; c++)
+        {
+            if(i % c == 0)
+            {
+                break;
+            }
+            
+        }
+        
+        if (c == i){
+            printf("%d ", i);
+            count++;
+        }
+        
+        
+    }
+    
+    return 0;
+}
+
