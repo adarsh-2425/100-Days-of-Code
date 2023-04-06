@@ -161,3 +161,33 @@ int main()
 
     return 0;
 }
+
+//Program to print the reverse of an Array
+
+#include <stdio.h>
+
+int main()
+{
+    int arr[10];
+    int i;
+    
+    printf("Enter 5 Elements : \n");
+    for(i = 0; i < 5; i++)
+    {
+        scanf("%d", &arr[i]);
+    }
+    
+    printf("Before Reversing : \n");
+     for(i = 0; i < 5; i++)
+    {
+        printf("\t%d ", arr[i]);
+    }
+    
+    printf("\nAfter Reversing : \n");
+     for(i = 5-1; i >= 0; i--)
+    {
+        printf("\t%d ", arr[i]);
+    }
+
+    return 0;
+}
