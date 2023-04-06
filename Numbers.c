@@ -135,3 +135,47 @@ int main()
     return 0;
 }
 
+//Program to find the Largest number among n input Numbers using Bubble Sort
+
+#include <stdio.h>
+
+int main()
+{
+    int i, j, n, temp, flag;
+    
+    printf("Enter number of integers : ");
+    scanf("%d", &n);
+    
+    int a[n];
+    printf("Enter %d integers : ", n);
+    for(i = 0; i < n; i++){
+        scanf("%d", &a[i]);
+    }
+    
+    //sorting using bubble sorting
+    //Ascending order
+    for(i = 0; i < n-1; i++)
+    {
+        flag = 0;
+        for(j = 0; j < n-1-i; j++)
+        {
+            if(a[j] > a[j+1])
+            {
+                temp = a[j];
+                a[j] = a[j+1];
+                a[j+1] = temp;
+                flag = 1;
+            }
+        }
+        
+        if(flag == 0)
+        break;
+    }
+    
+    printf("Sorted elements are : ");
+    for(i = 0; i < n; i++){
+        printf("\t%d", a[i]);
+    }
+    
+    return 0;
+}
