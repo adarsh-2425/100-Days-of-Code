@@ -49,3 +49,25 @@ int main()
          printf("%d is not a Armstrong  Number", original);
     }
 }
+
+//Program to find Factors of a Number
+
+#include <stdio.h>
+
+int main()
+{
+    int num, i;
+    
+    printf("Program to find Factors of a Number");
+    
+    printf("\nEnter Number : ");
+    scanf("%d", &num);
+    
+    for(i = 1; i <= num/2; i++){
+        if(num % i == 0){
+            printf("\t%d\n", i);
+        }
+    }
+
+    return 0;
+}
