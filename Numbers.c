@@ -179,3 +179,35 @@ int main()
     
     return 0;
 }
+
+//Program to find the Largest number among n input Numbers
+
+#include <stdio.h>
+
+int main()
+{
+    int a, n, big;
+    
+    printf("Enter number of integers : ");
+    scanf("%d", &n);
+    
+
+    printf("Enter Element 1  : ");
+    scanf("%d", &big);
+    
+    for(i = 1; i < n; i++)
+    {
+        printf("Enter Element %d : ", i+1);
+        scanf("%d", &a);
+        
+        if(a > big)
+        {
+            big = a;
+        }
+    }
+    
+    printf("\nLargest Number is %d", big);
+    
+    return 0;
+}
+
