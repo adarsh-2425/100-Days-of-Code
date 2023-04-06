@@ -234,3 +234,36 @@ int main()
     return 0;
 }
 
+//Program to check if input Number is int or float
+
+#include <stdio.h>
+
+int main()
+{
+    char a[10];
+    int i, flag = 0;
+    
+    printf("Enter Number : ");
+    scanf("%s", a);
+    
+    for(i = 0; i < 10; i++)
+    {
+        if(a[i] == '.')
+        {
+            flag = 1;
+            break;
+        }
+    }
+    
+    if(flag == 0)
+    {
+        printf("Number is int type");
+    }
+    
+    else
+    {
+        printf("Number is float type");
+    }
+
+    return 0;
+}
