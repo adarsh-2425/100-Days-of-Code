@@ -135,7 +135,7 @@ int main()
     return 0;
 }
 
-//Program to find the Largest number among n input Numbers using Bubble Sort
+//Program to sort Numbers using Bubble Sort
 
 #include <stdio.h>
 
