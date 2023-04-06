@@ -211,3 +211,26 @@ int main()
     return 0;
 }
 
+//Program to find exponential without using pow() method
+#include <stdio.h>
+
+int main()
+{
+    int num, expo, expo1;
+    long long int result = 1;
+    
+    printf("Enter Number and Exponential : \n");
+    scanf("%d%d", &num, &expo);
+    
+    expo1 = expo; //storing value of exponential for later use
+    
+    while(expo-- > 0) 
+    {
+        result *= num;
+    }
+    
+    printf("%d ^ %d = %lld", num, expo1, result);
+    
+    return 0;
+}
+
