@@ -247,3 +247,38 @@ int main()
 
     return 0;
 }
+
+//Largest and Smallest Element in Array
+
+#include <stdio.h>
+
+int main()
+{
+    int arr[5];
+    int i; 
+    int num, large = 0, small = 0;
+    
+    for(i = 0; i < 5; i++){
+        printf("Enter Element %d : ", i+1);
+        scanf("%d", &arr[i]);
+        
+        if( arr[i] > large )
+        {
+            large = arr[i];
+        }
+        
+        else
+        {
+            small = arr[i];
+        }
+    }
+    
+    for(i = 0; i <5; i++){
+        printf("\t%d", arr[i]);
+    }
+    
+    printf("\nLargest Element is %d", large);
+    printf("\nSmallest Element is %d", small);
+
+    return 0;
+}
