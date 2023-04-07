@@ -218,3 +218,32 @@ int main()
     return 0;
 }
 
+//Program to Delete an Element from Array in C
+
+#include <stdio.h>
+
+int main()
+{
+    int arr[5] = {1, 2, 3, 4, 5};
+    int i; 
+    int position = 3;//delete array element in position 3
+    
+    for(i = 0; i < 5; i++){
+        printf("%d ", arr[i]);
+    }
+    
+    for(i = position-1; i <= 5-1; i++) //loop starting from position
+    {
+        arr[i] = arr[i+1]; //updating the location with next elements
+        
+    }
+    
+
+    printf("\n");
+    
+    for(i = 0; i < 5; i++){
+        printf("%d ", arr[i]);
+    }
+
+    return 0;
+}
