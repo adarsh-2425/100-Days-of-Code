@@ -191,3 +191,30 @@ int main()
 
     return 0;
 }
+
+//Program to insert an element in an Array
+
+#include <stdio.h>
+
+int main()
+{
+    int arr[10] = {1, 2, 3, 4, 5};
+    int i, position = 3, value = 9;
+    
+    for(i = 0; i < 10; i++){
+        printf("%d ", arr[i]);
+    }
+    
+    for(i = 10-1; i >= position-1; i--){
+        arr[i + 1] = arr[i]; //right shifting array elements
+    }
+    
+    arr[position-1] = value;
+    
+    for(i = 0; i < 10; i++){
+        printf("\n\t%d ", arr[i]);
+    }
+
+    return 0;
+}
+
