@@ -45,3 +45,30 @@ int main()
 
     return 0;
 }
+
+//Program to convert a String from Upper Case to Lower Case without using strlwr()
+
+#include <stdio.h>
+
+int main()
+{
+    
+    char str[10] = "COmpiLer";
+    int i;
+    
+    printf("\nBefore : %s", str);
+    
+    for(i = 0; str[i] != '\0'; i++)
+    {
+        if(str[i] >= 'A' && str[i] <= 'Z')
+        {
+            str[i] += 32;
+        }
+        
+    }
+    
+    printf("\nAfter : %s", str);
+
+    return 0;
+}
+
