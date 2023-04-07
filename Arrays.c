@@ -282,3 +282,30 @@ int main()
 
     return 0;
 }
+
+//Program to find Sum of N input Numbers using Array
+
+#include <stdio.h>
+
+int main()
+{
+    int arr[5]; //initia;lizing array size with 5
+    int i; 
+    int sum =0;
+    
+    for(i = 0; i < 5; i++){
+        printf("Enter Element %d : ", i+1);
+        scanf("%d", &arr[i]);
+        
+        sum += arr[i];
+    }
+    
+    printf("\nArray Elements are : ");
+    for(i = 0; i <5; i++){
+        printf("\t%d", arr[i]);
+    }
+    
+    printf("\nSum is %d", sum);
+
+    return 0;
+}
