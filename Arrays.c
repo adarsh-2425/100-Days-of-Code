@@ -309,3 +309,46 @@ int main()
 
     return 0;
 }
+
+//Simple Program to Sort Array elements 
+//using insertion sort
+
+#include <stdio.h>
+
+int main()
+{
+    int n = 5;
+    int a[n]; //initializing array size with 5
+    int i, j;
+    int temp;
+    
+    for(i = 0; i < 5; i++){
+        printf("Enter Element %d : ", i+1);
+        scanf("\t%d", &a[i]);
+    }
+    
+    printf("\nBefore Sorting : ");
+    for(i = 0; i < 5; i++){
+        printf("\t%d", a[i]);
+    }
+    
+    //sorting using insertion sorting
+    for(i = 1; i < n; i++){
+        temp = a[i]; //assuming second element is sorted and storing iton temp
+        j = i - 1; //initializing j with i-1.  i-1 is first element
+        
+        while(j >= 0 && a[j] > temp){ //if j greater than temp, right shift it,
+            a[j+1] = a[j];
+            j--;
+        }
+        
+        a[j+1] = temp;
+    }
+    
+    printf("\nAfter Sorting : ");
+    for(i = 0; i < 5; i++){
+        printf("\t%d", a[i]);
+    }
+
+    return 0;
+}
