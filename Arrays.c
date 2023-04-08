@@ -394,3 +394,45 @@ int main()
 	return 0;
 }
 
+
+//Program to check whether a two dimensional array is a Sparse Matrix
+
+#include <stdio.h>
+
+int main()
+{
+    int row = 3, col = 3, count = 0;
+    int i, j;
+    int arr[row][col];
+    
+    //geting matrix
+    printf("Enter Matrix : ");
+    for(i = 0; i < row; i++)
+        for(j = 0; j < col; j++)
+            {
+                scanf("%d", &arr[i][j]);
+                if(arr[i][j] == 0)
+                {
+                    count++;
+                }
+            }
+            
+    //printing matrix
+    for(i = 0; i < row; i++){
+        for(j = 0; j < col; j++){
+            printf("%d\t", arr[i][j]);
+        }
+    printf("\n");
+    }
+    
+    // checking if the matrix is sparse or not
+    if(count > (row * col) / 2)
+    {
+        printf("It's a Sparse Matrix");
+    }
+    else
+    {
+        printf("Not a sparse matrix");
+    }
+}
+
