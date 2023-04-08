@@ -361,3 +361,49 @@ int main()
     printf("Determinant is %d", det);
 
 }
+
+
+
+//Find Normal and Trace of a Square Matrix in C Language
+
+//https://www.studytonight.com/c/programs/array/normal-and-trace-of-square-matrix
+
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int row = 3, col = 3, square = 0, trace = 0;
+    double root;
+    int i, j;
+    int matrix[row][col];
+    
+    //geting Matrix
+    printf("Enter Matrix : ");
+    for(i = 0; i < row; i++)
+        for(j = 0; j < col; j++)
+            {
+                scanf("%d", &matrix[i][j]);
+                square += matrix[i][j] * matrix[i][j];
+            }
+    root = sqrt(square);
+    
+    //finding Trace
+    for(i = 0; i < row; i++)
+    {
+        trace += matrix[i][i];
+    }
+    
+    //printing matrix
+    printf("\nMatrix is\n");
+    for(i = 0; i < row; i++){
+        for(j = 0; j < col; j++){
+           printf("%d\t", matrix[i][j]);
+        }
+    printf("\n");
+    }
+    
+    
+    printf("\nNormal is %lf", root);
+    printf("\nTrace is %d", trace);
+}
