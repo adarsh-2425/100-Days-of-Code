@@ -352,3 +352,45 @@ int main()
 
     return 0;
 }
+
+// Simple Program to remove Duplicate Element in an Array
+#include <stdio.h>
+
+int removeDuplicates(int arr[], int n)
+{
+	if(n == 0 ||  n == 1)
+	return n;
+	
+	int temp[n];
+	int i, j = 0;
+	
+	for(i = 0; i < n-1; i++)
+	    if(arr[i] != arr[i+1])
+	        temp[j++] = arr[i];
+	    
+	temp[j++] = arr[n-1];
+	
+	for(i = 0; i < j; i++)
+	    arr[i] = temp[i];
+	    return j;
+}
+
+// Driver code
+int main()
+{
+	int arr[] = { 1, 2, 2, 3, 4, 4, 4, 5, 6 };
+	
+	//sizeof(array) returns the number of bytes the array occupies
+	//Since each element can take more than 1 byte of space, you have to divide the result with the size of one element (sizeof(array[0])).
+	//This gives you number of elements in the array.
+	int n = sizeof(arr) / sizeof(arr[0]);
+
+	//returns new size of array.
+	n = removeDuplicates(arr, n);
+
+	// Print new array
+	for (int i = 0; i < n; i++)
+		printf("%d ", arr[i]);
+	return 0;
+}
+
