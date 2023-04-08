@@ -258,3 +258,69 @@ int main()
     return 0;
 }
 
+
+//Program to check whether given Square Matrix is symmetric or not
+
+#include <stdio.h>
+
+int main()
+{
+    int row = 3, col = 3, flag = 0;
+    int i, j;
+    int matrix[row][col], transpose[row][col];
+    
+    //geting Matrix
+    printf("Enter Matrix : ");
+    for(i = 0; i < row; i++)
+        for(j = 0; j < col; j++)
+            {
+                scanf("%d", &matrix[i][j]);
+            }
+            
+    //converting to transpose
+    for(i = 0; i < col; i++){
+        for(j = 0; j < row; j++){
+            transpose[i][j] = matrix[j][i];
+        }
+    }
+    
+    
+    //printing matrix
+    printf("\nOriginal Matrix\n");
+    for(i = 0; i < row; i++){
+        for(j = 0; j < col; j++){
+           printf("%d\t", matrix[i][j]);
+        }
+    printf("\n");
+    }
+    
+    printf("\n");
+    
+    //printing transpose of the matrix
+    printf("\nTranspose of the Matrix\n");
+    for(i = 0; i < row; i++){
+        for(j = 0; j < col; j++){
+           printf("%d\t", transpose[i][j]);
+        }
+    printf("\n");
+    }
+    
+    printf("\n");
+    
+    printf("\nA Square Matrix is said to be symmetric if it is equal to it's transpose.\n");
+    
+    //checking if matrix is equal to its transpose
+    for(i = 0; i < row; i++){
+        for(j = 0; j < col; j++){
+           if(matrix[i][j] != transpose[i][j])
+           {
+               printf("Matrix is not symmetric");
+               return 0;
+           }
+        }
+    }
+    
+    printf("\nMatrix is symmetric");
+    
+}
+
