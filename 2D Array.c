@@ -324,3 +324,40 @@ int main()
     
 }
 
+
+//Program to find Deteminant of 2x2 Matrix
+
+#include <stdio.h>
+
+int main()
+{
+    int row = 2, col = 2, det;
+    int i, j;
+    int matrix[row][col];;
+    
+    //geting Matrix
+    printf("Enter Matrix : ");
+    for(i = 0; i < row; i++)
+        for(j = 0; j < col; j++)
+            {
+                scanf("%d", &matrix[i][j]);
+            }
+    
+    
+    //printing matrix
+    printf("\nMatrix\n");
+    for(i = 0; i < row; i++){
+        for(j = 0; j < col; j++){
+           printf("%d\t", matrix[i][j]);
+        }
+    printf("\n");
+    }
+    
+    printf("\n");
+    
+    //Deteminant of the matrix
+    det = matrix[0][0] * matrix[1][1] - matrix[0][1] * matrix[1][0];
+    
+    printf("Determinant is %d", det);
+
+}
