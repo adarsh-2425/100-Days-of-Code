@@ -84,3 +84,29 @@ int main()
     
     return 0;
 }
+
+
+//Basic Basic while Loop
+
+#include <stdio.h>
+
+int main()
+{
+    int arr[5];
+    int i = 0; //always initialize values before using them on while
+    
+    printf("Enter Numbers : ");
+    
+    while(i < 5) //condition
+    {
+        scanf("%d",&arr[i]);
+        
+        i++; //incrementing i
+    }
+    
+    for(i = 0; i < 5; i++){
+            printf("%d ", arr[i]);
+    }
+    
+    return 0;
+}
