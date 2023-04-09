@@ -305,3 +305,30 @@ int main()
     
     return 0;
 }
+       
+       
+//Reversing Case of Character
+
+#include <stdio.h>
+#include <ctype.h> //
+int main()
+{
+    char ch, ch1;
+    
+    printf("Enter Character : ");
+    scanf("%c", &ch);
+    
+    printf("\nBefore Reversing : %c", ch);
+    
+    if(ch >= 'A' && ch <= 'Z')
+    {
+        printf("\nAfter Reversing : %c", ch + 32); //'A' + 32 = 'a'. common for all uppercases
+    }
+    else
+    {
+        printf("\nAfter Reversing : %c", toupper(ch)); //using toupper function to convert lowercase to uppercase
+    }
+    
+    
+    return 0;
+}       
