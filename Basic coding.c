@@ -356,3 +356,35 @@ int main()
     
     return 0;
 }
+
+       
+//Largest and Smallest using Global Declaration
+
+#include <stdio.h>
+
+int a, b; //Global Declaration
+
+int main()
+{
+    
+    printf("Enter Numbers : ");
+    scanf("%d %d", &a, &b);
+    
+    if(a == b)
+    {
+        printf("%d and %d are equal\n", a, b);
+    }
+    
+    else if(a > b)
+    {
+        printf("%d is the largest\n", a);
+        printf("%d is the smallest\n", b);
+    }
+    else
+    {
+        printf("%d is the largest\n", b);
+        printf("%d is the smallest\n", a);
+    }
+    
+    return 0;
+}       
