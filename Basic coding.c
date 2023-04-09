@@ -201,3 +201,22 @@ int main()
     
     return 0;
 }
+
+
+
+//Using gets() function
+
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char str[10];
+    
+    printf("Enter String : ");
+    gets(str);
+
+    puts(str);
+    
+    return 0;
+}
