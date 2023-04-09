@@ -240,3 +240,38 @@ int main()
     
     return 0;
 }
+
+
+//Palindrome Program
+
+#include <stdio.h>
+
+int main()
+{
+    int i,num, original;
+    int rev = 0, rem;
+    
+    printf("Enter Number : ");
+    scanf("%d", &num);
+    
+    original = num;
+    
+    while(num > 0)
+    {
+        rem = num % 10;
+        rev = (rev * 10) + rem;
+        num = num / 10;
+    }
+    
+    if(rev == original)
+    {
+        printf("%d is a Palindrome number", original);
+    }
+    else
+    {
+         printf("%d is not a Palindrome number", original);
+    }
+
+    
+    return 0;
+}
