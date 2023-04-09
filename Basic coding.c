@@ -184,3 +184,20 @@ int main()
     
     printf("\nAfter reverse : %s", rev);
 }
+
+
+//Find ASCII Value of Character
+
+#include <stdio.h>
+
+int main()
+{
+    char ch;
+    
+    printf("Enter character : ");
+    scanf("%c", &ch);
+    
+    printf("ASCII Value is %d", ch);
+    
+    return 0;
+}
