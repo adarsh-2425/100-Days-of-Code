@@ -134,3 +134,26 @@ int main()
     
     return 0;
 }
+
+
+
+//Program to find Factorial of number using for loop
+
+#include <stdio.h>
+
+int main()
+{
+    int i,num;
+    int fact = 1;
+    
+    printf("Enter Number : ");
+    scanf("%d", &num);
+    
+    for(i = 1; i <= num; i++){
+        fact *= i;
+    }
+    
+    printf("\nFactorial of %d is %d", num, fact);
+    
+    return 0;
+}
