@@ -277,3 +277,31 @@ int main()
     
     return 0;
 }
+
+
+
+//Checking for Vowel
+
+#include <stdio.h>
+#include <ctype.h> //to use tolower() function
+
+int main()
+{
+    char ch, ch1;
+    
+    printf("Enter Character : ");
+    scanf("%c", &ch);
+    
+    ch1 = tolower(ch); //converting uppercases to lowercase
+    
+    if(ch1 == 'a' || ch1 == 'e' || ch1 == 'i || ch1 == 'o' || ch1 == 'u')
+    {
+        printf("%c is a vowel", ch);
+    }
+    else
+    {
+        printf("%c is not a vowel", ch);
+    }
+    
+    return 0;
+}
