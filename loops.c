@@ -110,3 +110,27 @@ int main()
     
     return 0;
 }
+
+
+
+//Basic program to show use of nested for Loops
+
+#include <stdio.h>
+
+int main()
+{
+    int i, j; 
+    
+    for(i = 0; i < 5; i++)
+    {
+        printf("\t");
+        
+        for(j = 0; j < 5; j++)
+        {
+            printf("*");
+        }
+         printf("\n");
+    }
+    
+    return 0;
+}
