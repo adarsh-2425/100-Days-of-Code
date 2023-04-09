@@ -183,3 +183,29 @@ int main()
     
     return 0;
 }
+
+
+//Program to find Factorial of number using do - while loop
+
+#include <stdio.h>
+
+int main()
+{
+    int i,num;
+    int fact = 1;
+    
+    printf("Enter Number : ");
+    scanf("%d", &num);
+    
+    i = 1;
+    
+    do{
+        fact *= i;
+        i++;
+    }
+    while(i <= num);
+    
+    printf("\nFactorial of %d is %d", num, fact);
+    
+    return 0;
+}
