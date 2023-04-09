@@ -209,3 +209,34 @@ int main()
     
     return 0;
 }
+
+
+//Fibonacci Series Program using while loop
+
+#include <stdio.h>
+
+int main()
+{
+    int i,n;
+    int first = 1, second = 1, third;
+    
+    printf("Enter limit : ");
+    scanf("%d", &n);
+    
+    printf("%d ", first);
+    printf("%d ", second);
+
+    
+    i = 2;
+    while(i < n)
+    {
+        third = first + second;
+        first = second;
+        second = third;
+        i++;
+        printf("%d ", third);
+    }
+
+    
+    return 0;
+}
