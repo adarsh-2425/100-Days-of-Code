@@ -436,3 +436,36 @@ int main()
     }
 }
 
+
+//Second Largest Element in Array
+#include <stdio.h>
+
+int main()
+{
+    int a[10], i;
+    int big, sec;
+    
+    printf("Enter array elements : ");
+    for(i = 0; i < 5; i++)
+    {
+        scanf("%d", &a[i]);
+    }
+    
+    big = a[0];
+    
+    for(i = 1; i <= 5; i++)
+    {
+        if(a[i] > big)
+        {
+            sec  = big;
+            big = a[i];
+        }
+       
+    }
+    
+    printf("\nSecond Largest : %d", sec);
+    
+
+    return 0;
+}
+
