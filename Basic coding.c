@@ -388,3 +388,26 @@ int main()
     
     return 0;
 }       
+
+       
+//Program to find Sum of N input Numbers using Array
+#include <stdio.h>
+
+int main()
+{
+    int a[10], i;
+    int sum = 0;
+    
+    printf("Enter array elements : ");
+    for(i = 0; i < 5; i++)
+    {
+        scanf("%d", &a[i]);
+        sum += a[i];
+    }
+    
+    printf("\nSum : %d", sum);
+    
+
+    return 0;
+}
+     
