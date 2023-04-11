@@ -417,4 +417,35 @@ int main()
 }
 
 
+//  Print a Fibonacci series using recursion?
+
+#include <stdio.h>
+
+void fibonacci(int n){
+    static int f = 0, s = 1, t;
+    if(n > 0)
+    {
+    t = f + s;
+    f = s;
+    s = t;
+    printf("%d ", t);
+    fibonacci(n - 1); 
+    }
+    
+}
+
+
+int main()
+{
+   int n = 5;
+
+   printf("%d %d ", 0, 1);
+   
+   fibonacci(n - 2);
+    
+   return 0;
+    
+}
+
+
 
