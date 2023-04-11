@@ -511,3 +511,32 @@ int main()
 }
 
 
+// How would you find the second largest number in an array?
+
+#include <stdio.h>
+
+int main()
+{
+   
+    int arr[5] = {1, 2, 3, 4, 5};
+    int n = 5;
+    int big, sec;
+    
+    big = arr[0];
+    
+    for(int i = 1; i < n; i++)
+    {
+        
+        if(big < arr[i])
+        {
+            sec = big;
+            big = arr[i];
+        }
+    }
+    
+    printf("Second Big is %d", sec);
+    return 0;
+    
+}
+
+
