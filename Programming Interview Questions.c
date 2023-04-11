@@ -356,3 +356,48 @@ int main()
 }
 
 
+//  How do you reverse an array?
+
+#include <stdio.h>
+
+
+
+int main()
+{
+   int a[10];
+   int i, j, temp, flag;
+   
+   printf("Enter Elements : ");
+   for(i = 0; i < 5; i++)
+   {
+       scanf("%d", &a[i]);
+   }
+   
+   printf("Before Reversing : ");
+   for(i = 0; i < 5; i++)
+   {
+       printf("%d ",a[i]);
+   }
+   
+   //Reversing
+   for(i = 0; i < 5/2; i++)
+   {
+       temp = a[i];
+       a[i] = a[5-1-i];
+       a[5-1-i] = temp;
+   }
+   
+   printf("\nAfter Sorting : ");
+   for(i = 0; i < 5; i++)
+   {
+       printf("%d ",a[i]);
+   }
+    
+    return 0;
+    
+}
+
+
+
+
+
