@@ -617,3 +617,32 @@ int main()
 
     return 0;
 }
+
+
+//fizbuzz
+#include <stdio.h>
+
+int main()
+{
+    int n = 20;
+    
+    for(int i = 1; i <= 20; i++)
+    {
+        int flag3  = (i % 3 == 0);
+        int flag5 =  (i % 5 == 0);
+        
+        if(flag3 && flag5)
+            printf("Fizzbuzz ");
+            
+        else if(flag3)
+            printf("fizz ");
+            
+        else if(flag5)
+            printf("buzz ");
+            
+        else
+            printf("%d ", i);
+    }
+
+    return 0;
+}
