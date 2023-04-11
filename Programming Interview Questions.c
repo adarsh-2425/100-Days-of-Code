@@ -173,4 +173,52 @@ void sortArray(char str[])
     }
 
 
+// How do you calculate the number of vowels and consonants in a String?
+
+#include <stdio.h>
+#include <string.h>
+
+
+void lowercase(char []);
+
+int main()
+{
+   char str[10];
+   int vowel = 0, conso = 0;
+   int i;
+
+    printf("Enter string : ");
+    scanf("%s", str);
+    
+    lowercase(str);
+
+    for(i = 0; str[i]; i++)
+    {
+        if(str[i] == 'a' || str[i] == 'e' || str[i] == 'i' || str[i] == 'o' || str[i] == 'u')
+        {
+            vowel ++;
+        }
+        else if (str[i] >= 'a' && str[i] <= 'z')
+        {
+            conso++;
+        }
+    }
+    
+    printf("Vowel is %d and consonants is %d", vowel, conso);
+    
+    return 0;
+    
+}
+
+void lowercase(char str[])
+{
+    for(int i = 0; str[i]; i++)
+    {
+        if(str[i] >= 'A' && str[i] <= 'Z')
+        {
+            str[i] += 32;
+        }
+    }
+}
+
 
