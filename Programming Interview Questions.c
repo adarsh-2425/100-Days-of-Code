@@ -540,3 +540,37 @@ int main()
 }
 
 
+//How do you check if the given number is prime?
+
+#include <stdio.h>
+
+int main()
+{
+   
+    int num = 5;
+    
+    if(num <= 1)
+    {
+        printf("it cannot be a prime number");
+    }
+    
+    else
+    {
+        for(int i = 2; i < num; i++)
+        {
+        if(num % i == 0)
+            {
+            printf("Number is not prime");
+            return 0;
+            }
+        
+        }
+    
+    printf("Number is prime");
+    }
+    
+    return 0;
+    
+}
+
+
