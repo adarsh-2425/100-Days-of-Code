@@ -467,3 +467,47 @@ int main()
    return 0;
     
 }
+
+
+// How would you implement Binary Search?
+
+#include <stdio.h>
+
+int binarysearch(int a[], int x, int left, int right)
+{
+    if(right > left)
+    {
+       int mid = (left + right) / 2;
+    
+    if(a[mid] == x)
+        return mid;
+        
+    else if (a[mid] > x)
+        return binarysearch(a, x, left, mid-1);
+    else
+        return binarysearch(a, x, mid+1, right); 
+    }
+    
+    return -1;
+    
+}
+
+
+int main()
+{
+   int a[5] = {1, 2, 3, 4, 5};
+   int n = sizeof(a)/sizeof(a[0]);
+   int x = 3;
+   int result;
+   
+   result = binarysearch(a, x, 0, n-1);
+   
+   (result == -1)
+    ? printf("not present")
+    : printf("present at %d", result);
+    
+   return 0;
+    
+}
+
+
