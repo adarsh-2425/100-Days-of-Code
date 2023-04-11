@@ -448,4 +448,22 @@ int main()
 }
 
 
+// How do you find the factorial of an integer?
 
+#include <stdio.h>
+
+int main()
+{
+   int n = 3, fact = 1;
+
+   while(n != 0)
+   {
+       fact *= n;
+       n--;
+   }
+   
+   printf("%d", fact);
+    
+   return 0;
+    
+}
