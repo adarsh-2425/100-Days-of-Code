@@ -94,4 +94,83 @@ int main()
 }
 
 
+//How to find out if the given two strings are anagrams or not?
+
+#include <stdio.h>
+#include <string.h>
+
+void sortArray(char[]);
+void lowercase(char []);
+
+int main()
+{
+   char str1[10], str2[10];
+   int i;
+
+    printf("Enter string 1: ");
+    scanf("%s", str1);
+
+    printf("Enter string 2: ");
+    scanf("%s", str2); 
+    
+    if(strlen(str1) != strlen(str2))
+    {
+        printf("Strings are not anagram");
+        return 0;
+    }
+    
+    void lowercase(str1);
+    void lowercase(str2);
+    
+    //Sorting the arrays by making call to user defined function sortArray()  
+    sortArray(str1); 
+    sortArray(str2);
+    
+    for(i = 0; str1[i]; i++)
+    {
+        if(str1[i] != str2[i])
+        {
+            printf("Strings are not anagram");
+            return 0;
+        }
+    }
+    
+    printf("Strings are anagram");
+    return 0;
+    
+}
+
+void lowercase(char str[])
+{
+    for(int i = 0; str[i]; i++)
+    {
+        if(str[i] >= 'A' && str[i] <= 'Z')
+        {
+            str[i] += 32;
+        }
+    }
+}
+
+
+void sortArray(char str[])
+    {
+        for(int i = 0; i < strlen(str)-1; i++)
+        {
+            int flag = 0;
+            for(int j = 0; j < strlen(str)-1-i; j++)
+            {
+                if(str[j] > str[j+1])
+                {
+                    int temp = str[j];
+                    str[j] = str[j+1];
+                    str[j+1] = temp;
+                    flag = 1;
+                }
+            }
+            if(flag == 0)
+                break;
+        }
+    }
+
+
 
