@@ -62,3 +62,36 @@ int main()
 
     return 0;
 }
+
+
+//Find the number of occurrences of a character in a String?
+
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+   char str[10], ch;
+   int i, count = 0;
+
+    printf("Enter string : ");
+    gets(str);
+
+    printf("Enter character : ");
+    ch = getchar(); 
+    
+    //Iterating a loop through the string and comparing each character with a letter 
+    for(i = 0; str[i]; i++)
+    {
+        if(str[i] == ch)
+        {
+            count++;
+        }
+    }
+    
+    printf("Count is %d", count);
+    
+}
+
+
+
