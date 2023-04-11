@@ -594,3 +594,26 @@ int main()
     return 0;
     
 }
+
+
+//palindrome
+
+#include <stdio.h>
+
+int main()
+{
+    char str[10] = "malayalam";
+    
+    for(int i = 0; i < 9/2; i++)
+    {
+        if(str[i] != str[9-1-i])
+        {
+            printf("not palindrome");
+            return 0;
+        }
+    }
+    
+    printf("palindrome");
+
+    return 0;
+}
