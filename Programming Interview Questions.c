@@ -30,3 +30,35 @@ int main()
 
     return 0;
 }
+
+
+//How do you determine if a string is a palindrome?
+
+#include <stdio.h>
+#include <string.h>
+
+int main()
+{
+    char str[10], original[10];
+    int i, temp;
+  
+    
+    printf("Enter string : ");
+    scanf("%s", str);
+    
+    int left = 0;
+    int right = strlen(str) - 1;
+    
+    while(right > left)
+    {
+        if(str[left++] != str[right--])
+        {
+            printf("String is not palindrome");
+            return 0;
+        }
+    }
+  
+    printf("%s is a palindrome\n", str);
+
+    return 0;
+}
