@@ -647,4 +647,35 @@ int main()
     return 0;
 }
 
+//Program to find first N Prime Numbers
+
+#include <stdio.h>
+
+int main()
+{
+    int num;
+    
+    printf("Enter limit : ");
+    scanf("%d", &num);
+    
+    int i = 3, j, count;
+    
+    printf("2 ");
+    
+    for(count = 2; count <= num; i++)
+    {
+        for(j = 2; j < i; j++)
+        {
+            if(i % j == 0)
+            break;
+        }
+        
+        if(i == j)
+        {
+            printf("%d ", i);
+            count++;
+        }
+    }
+    return 0;
+}
 
