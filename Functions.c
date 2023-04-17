@@ -43,3 +43,20 @@ char cha() //fn definition
     }
 
 
+//No Argument No Return Type
+
+#include <stdio.h>
+
+void sum(void);
+
+void main()
+{
+    sum();
+
+}
+
+void sum()
+{
+    int a = 5, b = 10, sum = 0;
+    printf("sum is %d", a + b);
+}
