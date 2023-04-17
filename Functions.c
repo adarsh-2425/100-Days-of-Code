@@ -175,3 +175,23 @@ int number(int a)
     }
 }
 
+
+
+// Function With Argument and Return Type
+#include <stdio.h>
+
+int sum(int, int);
+
+int main()
+{
+    int result;
+    
+    result = sum(5, 6);
+    
+    printf("%d", result);
+}
+
+int sum(int a, int b)
+{
+    return a + b;
+}
