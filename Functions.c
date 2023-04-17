@@ -148,3 +148,30 @@ float sum(float a, float b)
 {
     printf("%f", a + b);
 }
+
+
+
+//With Argument without Return Type
+//even or odd
+#include <stdio.h>
+
+int number(int);
+
+void main()
+{
+    number(10);
+}
+
+//function for sum
+int number(int a)
+{
+    if(a % 2 == 0)
+    {
+        printf("%d is even", a);
+    }
+    else
+    {
+        printf("%d is odd", a);
+    }
+}
+
