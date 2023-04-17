@@ -19,3 +19,27 @@ int main()
 {
     sum(); //calling function
 }
+
+//accept char from function and call it in main fn and print
+
+#include <stdio.h>
+
+char cha(); //fn decalration
+
+int main()
+{
+    char ch;
+    ch = cha();
+    printf("ch is %c", ch);
+     //fn calling
+}   
+    
+char cha() //fn definition
+    {
+        char c;
+        printf("Enter char : ");
+        scanf("%c", &c);
+        return c;
+    }
+
+
