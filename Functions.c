@@ -60,3 +60,51 @@ void sum()
     int a = 5, b = 10, sum = 0;
     printf("sum is %d", a + b);
 }
+
+
+
+//No Argument No Return Type sum, subttraction, multiplication and division
+
+#include <stdio.h>
+
+void sum(void);
+void sub(void);
+void mul(void);
+void divi(void);
+
+void main()
+{
+    sum();
+    sub();
+    mul();
+    divi();
+
+}
+
+//function for sum
+void sum() 
+{
+    int a = 15, b = 10, sum = 0;
+    printf("\n%d + %d = %d", a, b, a + b);
+}
+
+//function for subtraction
+void sub()
+{
+    int a = 15, b = 10, sum = 0;
+    printf("\n%d - %d = %d", a, b, a - b);
+} 
+
+//function for multiplication
+void mul()
+{
+    int a = 15, b = 10, sum = 0;
+    printf("\n%d * %d = %d", a, b, a * b);
+}
+
+//function for division
+void divi()
+{
+    int a = 15, b = 10, sum = 0;
+    printf("\n%d / %d = %d", a, b, a / b);
+}
