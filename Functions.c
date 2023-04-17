@@ -108,3 +108,26 @@ void divi()
     int a = 15, b = 10, sum = 0;
     printf("\n%d / %d = %d", a, b, a / b);
 }
+
+
+
+//No Argument with Return Type
+
+#include <stdio.h>
+
+int sum(void);
+
+void main()
+{
+    int s;
+    s = sum();
+    printf("%d", s);
+}
+
+//function for sum
+int sum() 
+{
+    int a = 15, b = 10, sum = 0;
+    return a + b;
+}
+
