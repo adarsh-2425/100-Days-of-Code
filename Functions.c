@@ -131,3 +131,20 @@ int sum()
     return a + b;
 }
 
+
+//With Argument without Return Type
+
+#include <stdio.h>
+
+float sum(float, float);
+
+void main()
+{
+    sum(5.1, 6.1);
+}
+
+//function for sum
+float sum(float a, float b) 
+{
+    printf("%f", a + b);
+}
