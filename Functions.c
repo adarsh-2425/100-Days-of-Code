@@ -195,3 +195,31 @@ int sum(int a, int b)
 {
     return a + b;
 }
+
+
+//Passing String as an Argument to a Function
+//finding average
+#include <stdio.h>
+
+float avg(int [], int);
+
+int main()
+{
+    int marks[5] = {1, 2, 3, 4, 5};
+    float average;
+    
+    average = avg(marks, 5);
+    printf("%f", average);
+}
+
+float avg(int marks[], int n)
+{
+    int i, sum = 0;
+    float average = 0;
+    for(i = 0; i < n; i++)
+    {
+        sum += marks[i];
+    }
+    average = sum / n;
+    return average;
+}
