@@ -197,7 +197,7 @@ int sum(int a, int b)
 }
 
 
-//Passing String as an Argument to a Function
+//Passing Array as an Argument to a Function
 //finding average
 #include <stdio.h>
 
