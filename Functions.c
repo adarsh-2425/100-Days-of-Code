@@ -223,3 +223,29 @@ float avg(int marks[], int n)
     average = sum / n;
     return average;
 }
+
+
+
+//Passing String as an Argument to a Function
+//finding length of a string
+#include <stdio.h>
+
+int length(char []);
+
+int main()
+{
+    char str[5] = "Lol";
+    int len;
+    len = length(str);
+    printf("%d", len);
+}
+
+int length(char str[])
+{
+    int i, length = 0;
+    for(i = 0; str[i] != '\0'; i++)
+    {
+        length++;
+    }
+    return length;
+}
