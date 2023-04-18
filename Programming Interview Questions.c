@@ -679,3 +679,25 @@ int main()
     return 0;
 }
 
+
+
+//GATE 2000
+//output of j?
+#include <stdio.h>
+
+int incr(int i)
+{
+    static int count = 0; //scope will be throughout the prgm and variable will be initialized only once
+    count = count + i;
+    return count;
+}
+
+int main()
+{
+    int i, j;
+    for(i = 0; i <= 4; i++)
+    {
+        j = incr(i);
+    }
+    printf("%d", j);
+}
