@@ -249,3 +249,23 @@ int length(char str[])
     }
     return length;
 }
+
+
+
+//Return a String from a Function in C
+#include <stdio.h>
+
+char *display();
+
+void main()
+{
+    char *str;
+    str = display();
+    printf("%s", str);
+}
+
+char *display()
+{
+    static char str[] = "lol";
+    return str;
+}
