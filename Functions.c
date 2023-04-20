@@ -314,3 +314,30 @@ int sum(int a, int b)
 {
     return a + b;
 }
+
+
+
+//Callback Function using Function Pointer in C
+#include <stdio.h>
+
+void sum(int a, int b)
+{
+    printf("%d ", a + b);
+}
+
+void sub(int a, int b)
+{
+    printf("%d", a - b);
+}
+
+void display(void(*fptr)(int, int))
+{
+    (*fptr)(5,1);
+}
+
+void main()
+{
+    display(sum);
+    display(sub);
+}
+
