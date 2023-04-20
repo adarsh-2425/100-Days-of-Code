@@ -341,3 +341,44 @@ void main()
     display(sub);
 }
 
+
+//Function Pointer Example
+#include <stdio.h>
+
+void add(int a, int b)
+{
+   printf("%d", a + b); 
+}
+    
+
+void sub(int a, int b)
+{
+    printf("%d", a - b);
+}
+    
+
+void mul(int a, int b)
+{
+    printf("%d", a * b);
+}
+    
+
+void divi(int a, int b)
+{
+    printf("%d", a / b);
+}
+    
+void main()
+{
+    int ch, a, b;
+    int (*fptr[10])(int, int) = {add, sub, mul, divi};
+    
+    printf("Enter choice : \n");
+    printf("0. Add 1. Sub 2. Mul 3. Div\n");
+    scanf("%d", &ch);
+    
+    printf("Enter two numbers : ");
+    scanf("%d %d", &a, &b);
+    
+    (*fptr[ch])(a,b);
+}
