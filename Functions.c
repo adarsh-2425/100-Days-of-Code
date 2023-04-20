@@ -269,3 +269,26 @@ char *display()
     static char str[] = "lol";
     return str;
 }
+
+
+
+//Returning Pointer from Function in C
+#include <stdio.h>
+
+int *returnpointer(int []);
+
+void main()
+{
+    int *p;
+    int a[] = {1, 2, 3, 4, 5};
+    
+    p = returnpointer(a);
+    
+    printf("%d", *p);
+}
+
+int *returnpointer(int a[])
+{
+    a = a + 2; //pointer arithmetic. move pointer to right two times
+    return a;
+}
