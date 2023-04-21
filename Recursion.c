@@ -68,3 +68,24 @@ int fun2(int n)
     else
         return n * fun1(n-1);
 }
+
+
+//Factorial of a number using direct recursion
+#include <stdio.h>
+
+int fun1(int);
+
+
+void main()
+{
+    printf("%d", fun1(5));
+}
+
+int fun1(int n)
+{
+    if(n <= 1)
+        return 1;
+    else
+        return n * fun1(n-1);
+}
+
