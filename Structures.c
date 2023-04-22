@@ -64,3 +64,25 @@ int main()
     //ptr -> name is same as (*ptr).name
     printf("%s", ptr -> name);
 }
+
+
+//Structures in C using typedef
+
+#include <stdio.h>
+
+typedef struct student
+{
+    int rollno;
+    char name[10];
+    float mark;
+}student;
+
+student S = {1, "Lol", 2.4};
+
+int main()
+{
+    
+    student *ptr = &S;
+    
+    printf("%s", ptr -> name);
+}
