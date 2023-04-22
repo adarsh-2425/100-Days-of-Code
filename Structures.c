@@ -41,3 +41,26 @@ int main()
     for(int i = 0; i < 3; i++)
         printf("\n  %d. %s - %f", S[i].rollno, S[i].name, S[i].mark);
 }
+
+
+//Structure Pointer
+
+#include <stdio.h>
+
+struct student
+{
+    int rollno;
+    char name[10];
+    float mark;
+};
+
+struct student S = {1, "Lol", 2.4};
+
+int main()
+{
+    
+    struct student *ptr = &S;
+    
+    //ptr -> name is same as (*ptr).name
+    printf("%s", ptr -> name);
+}
