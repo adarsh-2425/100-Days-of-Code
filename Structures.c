@@ -86,3 +86,23 @@ int main()
     
     printf("%s", ptr -> name);
 }
+
+
+//Structure Padding
+
+#include <stdio.h>
+
+typedef struct student
+{
+    char a; //char size is 1
+    int b; //int size is 4
+    char c; //char size is 1
+}student;
+
+int main()
+{
+    student S;
+    printf("%ld", sizeof(S));
+}
+
+//result will be 12 instead of 6. 
