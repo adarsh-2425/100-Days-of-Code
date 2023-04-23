@@ -106,3 +106,24 @@ int main()
 }
 
 //result will be 12 instead of 6. 
+
+
+//Structure Packing
+
+#pragma pack(1) //used to turn off automatic structure padding
+#include <stdio.h>
+
+typedef struct student
+{
+    char a; //char size is 1
+    int b; //int size is 4
+    char c; //char size is 1
+}student;
+
+int main()
+{
+    student S;
+    printf("%ld", sizeof(S));
+}
+
+//Now result will be 6. 
