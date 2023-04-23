@@ -127,3 +127,22 @@ int main()
 }
 
 //Now result will be 6. 
+
+
+//Designated Initialization in Structures
+
+
+#include <stdio.h>
+
+typedef struct student
+{
+    float a; 
+    int b; 
+    int c; 
+}student;
+
+int main()
+{
+    student S = {.b = 1, .c = 5, .a = 15};
+    printf("%f\n %d\n %d\n",S.a, S.b, S.c);
+}
