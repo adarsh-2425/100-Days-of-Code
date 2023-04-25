@@ -74,3 +74,20 @@ int main()
     
 }
 
+
+//Pointer Comparison
+
+#include <stdio.h>
+
+int main()
+{
+    int a = 5, b = 10;
+    int *p1 = &a, *p2 = &b;
+    
+    if(p1 > p2)
+        printf("P1 greater");
+    else
+        printf("p2 greater");
+    
+}
+
