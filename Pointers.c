@@ -105,3 +105,36 @@ int main()
     printf("%d", **p2);
     
 }
+
+
+//Concatenate Strings using Pointer
+
+#include <stdio.h>
+
+int main()
+{
+    char str1[15] = "lol";
+    char str2[10] = "happens";
+    
+    char *first = str1;
+    char *second = str2;
+    
+    while(*first)
+    {
+        first++;
+    }
+    
+    while(*second)
+    {
+        *first = *second;
+        first++;
+        second++;
+    }
+    
+    *first = '\0';
+    
+    printf("%s", str1);
+    
+}
+
+
