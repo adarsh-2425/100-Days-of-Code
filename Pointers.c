@@ -50,3 +50,27 @@ int main()
         printf("%d ", *ptr[i]);
     }
 }
+
+
+//Pointer Increment and Decrement
+
+#include <stdio.h>
+
+
+int main()
+{
+    int arr[5] = {1,2,3,4,5};
+    int i, *ptr[5];
+    
+    for(i = 0; i < 5; i++)
+    {
+        ptr[i] = &arr[i];
+    }
+    
+
+        printf("%d ", *ptr[0] + 1);
+        
+        printf("%d ", *ptr[2] - 1);
+    
+}
+
