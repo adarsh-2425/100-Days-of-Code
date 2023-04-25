@@ -176,3 +176,24 @@ int main()
     }
     printf("%s", a);
 }
+
+
+//Reverse a String using Pointer
+#include <stdio.h>
+
+int main()
+{
+   int a = 5;
+   int b = 10;
+   
+   int *p1 = &a;
+   int *p2 = &b;
+   
+   int temp = *p1;
+   *p1 = *p2;
+   *p2 = temp;
+   
+   printf("%d ", a);
+   printf("%d", b);
+}
+
