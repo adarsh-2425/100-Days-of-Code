@@ -28,3 +28,25 @@ int main()
 
     return 0;
 }
+
+
+//Program to access Array of int Pointers
+
+#include <stdio.h>
+
+
+int main()
+{
+    int arr[5] = {1,2,3,4,5};
+    int i, *ptr[5];
+    
+    for(i = 0; i < 5; i++)
+    {
+        ptr[i] = &arr[i];
+    }
+    
+    for(i = 0; i < 5; i++)
+    {
+        printf("%d ", *ptr[i]);
+    }
+}
