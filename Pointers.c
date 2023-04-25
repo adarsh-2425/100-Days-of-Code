@@ -152,3 +152,27 @@ int main()
         printf("%d ", *p);
     
 }
+
+//Reverse a String using Pointer
+#include <stdio.h>
+
+int main()
+{
+    char a[5] = "hmmmm";
+
+    int n = 5, i;
+    char ch;
+    
+    char *begin = a;
+    char *end = a+n-1;
+    for(i = 0; i < (n-1)/2; i++)
+    {
+        ch = *end;
+        *end = *begin;
+        *begin = ch;
+        
+        begin++;
+        end--;
+    }
+    printf("%s", a);
+}
