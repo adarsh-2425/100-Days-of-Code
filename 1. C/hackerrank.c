@@ -81,3 +81,56 @@ int main() {
  
     return 0;
 }
+
+
+//printing pattern using loops
+//https://www.hackerrank.com/challenges/printing-pattern-2/problem?isFullScreen=true&h_r=next-challenge&h_v=zen
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+
+    int n;
+    scanf("%d", &n);
+    int size = n + (n-1);
+  	int arr[size];
+    int i, j, k, d;
+    
+    for(i = 0; i < size; i++){
+        arr[i] = n;
+    }
+    
+    int left = 0;
+    int right = size;
+    
+    for(i = 0; i < size; i++){
+        for(k = 0; k < size; k++){
+            printf("%d ", arr[k]);
+        }
+    
+    if(i < size/2)
+    {
+        for(j = left + 1; j < right - 1; j++){
+            arr[j]--;
+        }
+        left++;
+        right--;
+    }
+    
+    if(i >= size/2)
+    {
+        left--;
+        right++;
+        for(d = left + 1; d < right - 1; d++){
+            arr[d]++;
+        }
+        
+    }
+    printf("\n");
+    }
+    return 0;
+}
