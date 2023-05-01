@@ -218,3 +218,18 @@ int sum(int a, int b)
     return a + b;
 }
 
+//Write a program to swap two integer variables using pointers.
+
+#include <stdio.h>
+
+int main()
+{
+    int a = 5, b = 10;
+    int *ptr1 = &a, *ptr2 = &b;
+    
+    int temp = *ptr1;
+    *ptr1 = *ptr2;
+    *ptr2 = temp;
+    
+    printf("%d %d", a, b);
+}
