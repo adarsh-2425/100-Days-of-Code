@@ -338,3 +338,47 @@ int main()
     
     free(str);
 }
+
+
+//Write a program in C that takes an array of integers as input, and then uses pointers to find the largest and smallest values in the array.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int largest_smallest(int *, int, int *, int *);
+
+int main()
+{
+    int *arr, n, i;
+    printf("Enter size of array : ");
+    scanf("%d", &n);
+    
+    arr = (int *) malloc (n * sizeof(int));
+    
+    printf("Enter numbers : ");
+    for(i = 0; i < n; i++){
+        scanf("%d", (arr + i));
+    }
+    
+    int large, small;
+    
+    largest_smallest(arr, n, &large, &small);
+    
+    printf("largest is %d\n", large);
+    printf("smallest is %d\n", small);
+    
+    free(arr);
+}
+
+int largest_smallest(int *arr, int n, int *large, int *small){
+    int i;
+    *large = arr[0];
+    *small = arr[0];
+    for(i = 1; i < n; i++){
+        if(arr[i] > *large)
+            *large = arr[i];
+        else if(arr[i] < *small)
+            *small = arr[i];
+            
+    }
+}
