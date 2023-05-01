@@ -256,3 +256,34 @@ int main()
 int sum(int *ptr1, int *ptr2){
     return *ptr1 + *ptr2;
 } 
+
+
+//Write a program to find the largest element in an array of integers using pointers.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int *ptr;
+    int n = 5;
+    
+    ptr = (int *) malloc (n * sizeof(int));
+    
+    for(int i = 0; i < 5; i++){
+        scanf("%d", ptr + i);
+    }
+    
+    int large = ptr[0];
+    for(int i = 1; i < 5; i++){
+        if(ptr[i] > large){
+            large = ptr[i];
+        }
+            
+    }
+    
+    printf("\n %d", large);
+    
+    free(ptr);
+}
+
