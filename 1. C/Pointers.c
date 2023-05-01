@@ -382,3 +382,52 @@ int largest_smallest(int *arr, int n, int *large, int *small){
             
     }
 }
+
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int **arr;
+    int i ,j, sum = 0;
+    int rows = 2, cols = 2;
+    
+    //allocate memory for the rows
+    arr = (int **) malloc (rows * sizeof(int));
+    if (arr == NULL) {
+        printf("Error: Out of memory\n");
+        exit(1);
+    }
+    
+    //allocate memory for the cols in each row
+    for(i = 0; i < rows; i++){
+        arr[i] = (int *) malloc (cols * sizeof(int));
+        if (arr == NULL) {
+            printf("Error : out of memory\n");
+            exit(1);
+        }
+    }
+    
+    printf("Enter values : ");
+    //getting values
+    for(i = 0; i < rows; i++){
+        for(j = 0; j < cols; j++)
+            scanf("%d", &arr[i][j]);
+    }
+    
+    
+     for(i = 0; i < rows; i++){
+         for(j = 0; j < cols; j++)
+            sum += arr[i][j];
+     }
+        
+     printf("%d", sum);      
+    
+    //free the memory allocated. this step is must in 2d arrays
+    for(i  = 0; i < rows; i++){
+        free(arr[i]);
+    }
+    
+    free(arr);
+}
