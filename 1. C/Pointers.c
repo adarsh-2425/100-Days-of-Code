@@ -287,3 +287,32 @@ int main()
     free(ptr);
 }
 
+//Write a function to reverse a string using pointers.
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+void reverse(char *, int);
+
+int main()
+{
+    char *str;
+    str = (char *) malloc (10 * sizeof(char));
+    
+    printf("Enter string : ");
+    scanf("%s", str);
+    
+    reverse(str, strlen(str));
+    
+    free(str);
+}
+
+void reverse(char *str, int n){
+    for(int i = 0; i < n/2; i++){
+        int temp = str[i];
+        str[i] = str[n-1-i];
+        str[n-1-i] = temp;
+    }
+    printf("%s", str);
+}
