@@ -316,3 +316,25 @@ void reverse(char *str, int n){
     }
     printf("%s", str);
 }
+
+
+//Write a program in C to declare a string variable, and then use a pointer to print each character of the string on a new line.
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main()
+{
+    char *str;
+    str = (char *) malloc (20 * sizeof(char));
+    
+    printf("Enter string : ");
+    scanf("%s", str);
+    
+    for(int i = 0; i < str[i]; i++){
+        printf("%c\n", str[i]);
+    }
+    
+    free(str);
+}
