@@ -233,3 +233,26 @@ int main()
     
     printf("%d %d", a, b);
 }
+
+
+//Write a function to compute the sum of two integer values and store the result in a third integer variable using pointers.
+
+#include <stdio.h>
+
+int sum(int *ptr1, int *ptr2);
+
+int main()
+{
+    int a = 5, b = 10, result = 0;;
+    int *ptr1 = &a, *ptr2 = &b;
+    
+    result = sum(ptr1, ptr2);
+    
+    
+    
+    printf("%d", result);
+}
+
+int sum(int *ptr1, int *ptr2){
+    return *ptr1 + *ptr2;
+} 
