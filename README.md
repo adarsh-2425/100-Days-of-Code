@@ -12,3 +12,6 @@ To participate in the challenge, all you need to do is:
 The challenge is not just about quantity, but also about quality. Participants are encouraged to work on projects that challenge them and help them improve their skills. The challenge is also a great way to build a portfolio of projects and connect with other developers.
 
 The 100 Days of Code challenge is a great way to stay motivated, build new skills, and make progress towards your coding goals. So why not give it a try?
+
+##C Interview Preparation
+https://www.sanfoundry.com/online-c-test-increment-decrement-operators/
