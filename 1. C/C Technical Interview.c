@@ -35,3 +35,21 @@ int main()
     printf("%d %d %d", d, a, b);
 }
 
+/******************************************************************************
+
+Modify Operators | C Technical Interview Questions and Answers
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+    int a = 1, b = 1, c;
+    
+    c = a++ + b;
+    
+    printf("%d %d", a, b);
+}
+
+//a = 2, b = 1
