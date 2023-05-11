@@ -13,5 +13,5 @@ The challenge is not just about quantity, but also about quality. Participants a
 
 The 100 Days of Code challenge is a great way to stay motivated, build new skills, and make progress towards your coding goals. So why not give it a try?
 
-#C Interview Preparation
-https://www.sanfoundry.com/online-c-test-increment-decrement-operators/
+## C Interview Preparation
+1. https://www.sanfoundry.com/online-c-test-increment-decrement-operators/
