@@ -16,6 +16,7 @@ std::cout << "Enter Distance (in miles): ";
 
 std::cin >> miles;
 
+// calculating distance in kilometers
 kilometers = miles * 1.609344;
 
 std::cout << "Distance in Kilometer is: " << kilometers << " kms" << "\n";
