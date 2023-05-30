@@ -32,7 +32,7 @@ Then define the constructor inside song.cpp. Initialize title to ```new_title```
 
 2. In main(), instantiate a new ```Song``` called ```back_to_black```. Give it:
 
-a ```title``` of "Back to Black"
-an ```artist``` of "Amy Winehouse"
+  a ```title``` of "Back to Black"   
+  an ```artist``` of "Amy Winehouse"   
 
 (You can print out each attribute of back_to_black using .get_title() and .get_artist().)
