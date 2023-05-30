@@ -1,6 +1,6 @@
 # Constructors
 
-Is there a way to give an object some data right when it gets created? We’re so glad you asked!
+Is there a way to give an object some data right when it gets created?
 
 A constructor is a special kind of method that lets you decide how the objects of a class get created. It has the same name as the class and no return type. Constructors really shine when you want to instantiate an object with specific attributes.
 
