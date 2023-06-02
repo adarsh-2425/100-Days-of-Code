@@ -1,0 +1,38 @@
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+//Triangle Class
+class Triangle {
+    public:
+        void triangle() {
+            std::cout << "I am a triangle\n";
+        }
+};
+
+//creating derived Class named isosceles class
+class Isosceles : public Triangle {
+    public:
+        void isosceles() {
+            std::cout << "I am an isosceles triangle\n";
+        }
+        
+        void twoSides() {
+            std::cout << "In an isosceles triangle two sides are equal\n";
+        }
+};
+
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+    //creating  object from derived class
+    Isosceles isc;
+    isc.isosceles();
+    isc.twoSides();
+    isc.triangle();
+     
+    return 0;
+}
